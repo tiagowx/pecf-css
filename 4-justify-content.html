@@ -20,7 +20,7 @@
       margin: 5px;
       color: white;
       text-align: center;
-      
+
     }
 
     .flex-start {
@@ -46,10 +46,18 @@
     .space-evenly {
       justify-content: space-evenly;
     }
+
+    .column {
+      flex-direction: column ;
+      min-height: 200px;
+    }
   </style>
+
+
 </head>
 
 <body>
+  <h1>Row</h1>
   <p>flex-start</p>
   <section class="container flex-start">
     <div class="item">1</div>
@@ -82,6 +90,45 @@
   </section>
   <p>space-evenly</p>
   <section class="container space-evenly">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">outro item</div>
+  </section>
+
+  <h1>Colunm</h1>
+  <p>flex-start column</p>
+  <section class="container flex-start column">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">outro item</div>
+  </section>
+  <p>flex-end column</p>
+  <section class="container flex-end column">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">outro item</div>
+  </section>
+  <p>center column</p>
+  <section class="container center column">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">outro item</div>
+  </section>
+
+  <p>space-between</p>
+  <section class="container space-between column">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">outro item</div>
+  </section>
+  <p>space-around</p>
+  <section class="container space-around column">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">outro item</div>
+  </section>
+  <p>space-evenly</p>
+  <section class="container space-evenly column">
     <div class="item">1</div>
     <div class="item">2</div>
     <div class="item">outro item</div>
